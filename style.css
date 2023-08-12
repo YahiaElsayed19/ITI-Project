@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #0779e4;
+}
+
+.logo {
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.active {
+    color: var(--primary-color) !important;
+}
+
+/* --------------------------------------------------------------- */
+
+.landing {
+    position: relative;
+    background-image: url("images/landing.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 500;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+
+.landing::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 121, 228, 0.9);
+    z-index: -1;
+}
+
+.landing .intro {
+    margin-bottom: 48px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* --------------------------------------------------------------- */
+
+.my-skills {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f6f6f6;
+}
+
+.info {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.my-skills p {
+    color: #333;
+    max-width: 500px;
+    margin: 8px auto;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.left p {
+    text-align: right;
+}
+
+.progress {
+    border: 1px solid #eee;
+}
+
+.progress p {
+    font-size: 12px;
+}
+
+/* --------------------------------------------------------------- */
+.projects {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.projects p {
+    color: #333;
+    max-width: 500px;
+    margin: 8px auto;
+}
+
+.col {
+    margin: 8px;
+}
